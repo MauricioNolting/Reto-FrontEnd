@@ -51,7 +51,8 @@ img {
 }
 
 section {
-    display: box;
+    display: grid;
+    min-width: 300px;
     max-width: 300px;
     height: auto;
     flex-direction: column;
@@ -71,12 +72,3 @@ p {
     padding: 0 2.2rem 2.5rem 2.2rem;
     color: var(--Grayish-blue);
 }
-
-@media (min-width: 1444px) {
-    body {
-       grid-template-columns: 1fr 1fr 1fr;
-        grid-column-start: 2;
-       
-    }
-}
-
