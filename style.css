@@ -1,0 +1,82 @@
+:root {
+    /*colors*/
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    /*size font*/
+    --body-size: 15px
+
+    /*font-weight*/
+    --weight-fino: 400;
+    --wheight-ancho: 700;
+
+    --letras-del-ejercicio: 'Outfit', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: var(--letras-del-ejercicio);
+    padding: 1.3rem;
+    background-color: var(--Light-gray)
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: .8rem;
+}
+
+section {
+    display: box;
+    max-width: 300px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1.2rem;
+    background-color: var(--white);
+}
+
+h2 {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+p {
+    font-size: 15px;
+    padding: 0 2.2rem 2.5rem 2.2rem;
+    color: var(--Grayish-blue);
+}
+
+@media (min-width: 1444px) {
+    body {
+       grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 2;
+       
+    }
+}
+
